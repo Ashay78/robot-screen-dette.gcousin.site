@@ -3,8 +3,6 @@ const fs = require("fs");
 
 const dateFolder = new Date().toISOString().slice(0, 7);
 const dateFile = new Date().getDate();
-console.log(dateFolder);
-console.log(dateFile);
 
 if (!fs.existsSync('screen')) {
     fs.mkdirSync('screen');
